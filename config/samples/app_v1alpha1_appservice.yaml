@@ -1,0 +1,12 @@
+apiVersion: app.atomcjx.top/v1alpha1
+kind: AppService
+metadata:
+  name: nginx-sample
+spec:
+  # Add fields here
+  size: 2
+  image: nginx:1.9.1
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30004
